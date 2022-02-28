@@ -1,18 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
+using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit;
 
-public class NewBehaviourScript : MonoBehaviour
+/// <summary>
+/// 컨트롤러 단일 입력 받기
+/// </summary>
+
+public class TriggerSwitch : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private InputDevice cont;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        cont.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger);
+        if (trigger)
+        {
+            // 키 누르는 중
+        }
+
     }
 }
