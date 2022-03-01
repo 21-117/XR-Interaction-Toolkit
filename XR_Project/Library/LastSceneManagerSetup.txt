@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/XR_Interaction_Toolkit.unity
+- path: Assets/Scenes/XR_Interaction_Toolkit_test.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
