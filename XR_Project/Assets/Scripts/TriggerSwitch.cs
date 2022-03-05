@@ -12,18 +12,28 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class TriggerSwitch : MonoBehaviour
 {
     private InputDevice cont;
-
+    private XRController xrCont;
+    bool value = false;
     void Start()
     {
-
+        xrCont = GameObject.FindWithTag("Right").transform.GetComponent<XRController>();
     }
 
     void Update()
     {
-        cont.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger);
-        if (trigger)
+        //cont.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger);
+        
+        if (xrCont.inputDevice.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger))
         {
-            // 키 누르는 중
+            if (!value)
+            {
+                // 키 떼는 즉시
+            }
+            else
+            {
+                // 버튼 누르기
+            }
+            value = true;
         }
 
     }
