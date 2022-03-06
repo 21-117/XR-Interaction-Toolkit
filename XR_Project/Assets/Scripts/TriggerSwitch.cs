@@ -16,6 +16,7 @@ public class TriggerSwitch : MonoBehaviour
     bool value = false;
     void Start()
     {
+        // 태그로 설정 된 오른쪽 컨트롤러 할당
         xrCont = GameObject.FindWithTag("Right").transform.GetComponent<XRController>();
     }
 
@@ -25,15 +26,15 @@ public class TriggerSwitch : MonoBehaviour
         
         if (xrCont.inputDevice.TryGetFeatureValue(CommonUsages.triggerButton, out bool trigger))
         {
-            if (!value)
+            if (trigger != value)
             {
-                // 키 떼는 즉시
+                // 버튼을 누르고 있을 때
             }
             else
             {
-                // 버튼 누르기
+                // 버튼을 눌렀을 때
             }
-            value = true;
+            value = trigger;
         }
 
     }
