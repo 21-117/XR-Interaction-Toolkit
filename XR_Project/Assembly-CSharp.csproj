@@ -64,6 +64,9 @@
     <Compile Include="Assets\Scripts\Controller_Moving.cs" />
     <Compile Include="Assets\SampleSceneAssets\Scripts\LookWithMouse.cs" />
     <Compile Include="Assets\Scripts\SocketWithFind.cs" />
+    <Compile Include="Assets\SampleSceneAssets\Scripts\EnumDefinition.cs" />
+    <Compile Include="Assets\SampleSceneAssets\Scripts\ObjectID.cs" />
+    <Compile Include="Assets\SampleSceneAssets\Scripts\SocketWithObj.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

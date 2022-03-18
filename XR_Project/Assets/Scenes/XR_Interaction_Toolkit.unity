@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6769,6 +6769,7 @@ GameObject:
   - component: {fileID: 1488582954}
   - component: {fileID: 1488582959}
   - component: {fileID: 1488582958}
+  - component: {fileID: 1488582960}
   m_Layer: 0
   m_Name: Cube_Y
   m_TagString: Untagged
@@ -6983,6 +6984,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1488582960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488582953}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae41280fb120ad44f8d030c7de4beeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aaa: 0
+  num: 0
 --- !u!1 &1747943229
 GameObject:
   m_ObjectHideFlags: 0
