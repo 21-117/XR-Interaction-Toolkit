@@ -67,6 +67,8 @@
     <Compile Include="Assets\Scripts\Controller_Moving.cs" />
     <Compile Include="Assets\SampleSceneAssets\Scripts\LookWithMouse.cs" />
     <Compile Include="Assets\Scripts\SocketWithFind.cs" />
+    <Compile Include="Assets\SampleSceneAssets\Scripts\Scenario_Manager.cs" />
+    <Compile Include="Assets\SampleSceneAssets\Scripts\Scenario_Data.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
