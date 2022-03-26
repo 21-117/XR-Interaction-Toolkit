@@ -71,6 +71,7 @@
     <Compile Include="Assets\SampleSceneAssets\Scripts\LookWithMouse.cs" />
     <Compile Include="Assets\Scripts\SocketWithFind.cs" />
     <Compile Include="Assets\Scripts\SwitchText.cs" />
+    <Compile Include="Assets\Scripts\ScenarioData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

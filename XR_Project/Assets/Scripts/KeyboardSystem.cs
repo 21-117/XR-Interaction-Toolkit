@@ -24,7 +24,6 @@ public class KeyboardSystem : MonoBehaviour
     {
         Vector3 fwd = transform.TransformDirection(Vector3.forward);
 
-            cont = controller.instance.GetInputDeviceController();
             if (cont.TryGetFeatureValue(CommonUsages.triggerButton, out bool isTrigger))
             {
                 if (isTrigger != state)
