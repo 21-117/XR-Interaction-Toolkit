@@ -22,7 +22,6 @@ public class CameraUI : MonoBehaviour
 
     void Update()
     {
-
         cameraUI.transform.rotation = Quaternion.Lerp(transform.rotation, mainCamera.transform.rotation, smoothRotFactor);
 
         var cameraCenter = mainCamera.transform.position + mainCamera.transform.forward * distanceToHead - mainCamera.transform.right * leftPosition;
